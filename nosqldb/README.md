@@ -10,7 +10,7 @@ $YCSBHOME is a YCSB home directory.
        -harange 5010,5020
     java -jar $KVHOME/lib/kvstore-1.2.123.jar start -root $KVROOT
     java -jar $KVHOME/lib/kvstore-1.2.123.jar runadmin \
-        -port 5000 -host localhost -script $YCSBHOME/conf/script.txt
+        -port 5000 -host localhost load -file $YCSBHOME/nosqldb-binding/conf/script.txt
 
 BENCHMARK
 
